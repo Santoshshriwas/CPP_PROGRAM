@@ -73,9 +73,9 @@ int main()
   cin>>n;
   cout<<fact(n);
 }
-
 */
 /*
+
 // fibonacci
 #include <iostream>
 using namespace std;
@@ -102,15 +102,15 @@ int main()
   cin>>f;
   cout<<fib(f);
 }
-
 */
+
 
 // pilindrom
 
 /*
 #include <bits/stdc++.h>
 using namespace std;
-int plndrm(string &s int i, int j)
+bool PalinDrom(string &s int i, int j)
 {
   if(i==j)
   {
@@ -123,14 +123,14 @@ int plndrm(string &s int i, int j)
    int ans=fib(f-1)+fib(f-2);
   return ans;
 }
-plndrm(s,i+1,j-1);
+PalinDrom(s,i+1,j-1);
 return true;
 
 int main()
 {
   
   string s = "madam";
-  if(plndrm(s,0,s.length()-1))
+  if(PalinDrom(s,0,s.length()-1))
   {
       cout<<"PalinDrom";
   }
@@ -140,7 +140,33 @@ int main()
   }
 }
 */
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// bool Palindrome(string &s, int i, int j) {
+//     if (i >= j) {
+//         return true;
+//     }
+//     if (s[i] != s[j]) {
+//         return false;
+//     }
+//     return Palindrome(s, i + 1, j - 1);
+// }
+
+// int main() {
+//     string s = "madam";
+//     if (Palindrome(s, 0, s.length() - 1)) {
+//         cout << "Palindrome";
+//     } else {
+//         cout << "Not Palindrome";
+//     }
+//     return 0;
+// }
+
+ 
 /*
+
 // SAY DIGIT
 #include <iostream>
 using namespace std;
@@ -165,9 +191,9 @@ int main()
   cin>>p;
   dgt(p,arr);
 }
-
-
 */
+
+ 
 /*
 // recurtion se bubble sort q1
 #include <iostream>
@@ -199,7 +225,6 @@ int main()
 }
 
 */
-
 #include <iostream>
 using namespace std;
 int stair (int a)
@@ -222,4 +247,4 @@ int main()
     cin>>a;
     cout<<stair (a);
   
-}
+} 

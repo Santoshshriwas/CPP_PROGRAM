@@ -66,7 +66,7 @@ int main ()
   display(h);
   inserthead (h, 40);
   display(h);
-  bool p=search(h,30);
+  bool p=search(h,10);
   if(p)
   {
     cout<<"found";
@@ -76,8 +76,8 @@ int main ()
     cout <<"not Found";
   }
 }
-
 */
+
 
 #include <iostream>
 using namespace std;
@@ -127,10 +127,45 @@ node *listnode(node *head)
   node *odd=h;
   node *even =h->nxt;
   node *evenhead=even;
-  while(even!NULL && even->nxt!=NULL)
+  while(even!=NULL && even->nxt!=NULL)
   {
-
+    //  odd->nxt=odd->nxt->nxt;
+    //  odd = odd->nxt;
+     even->nxt = even->nxt->nxt;
+     even= even->nxt;
+       odd->nxt=odd->nxt->nxt;
+     odd = odd->nxt;
   }
+  odd->nxt= evenhead;
+  return h;
 }
 
+// node *rev (node *&h)
+// {
+//   if(h==NULL || h->nxt==NULL)
+//   {
+//     return h;
+//   }
+//   node *newhead = rev (h->nxt);
+//   h->nxt->nxt=h;
+//   h->nxt=NULL;
+//   return newhead;
+// }
+
+int main()
+{
+  node *h=NULL;
+  insert(h,10);
+  insert(h,20);
+  insert(h,3);
+  insert(h,5);
+  insert(h,50);
+  insert(h,67);
+  display(h);
+  cout<<"oddevenlist\n";
+  listnode(h);
+  display(h);
+  // node *nh=rev(h);
+  // display(nh);
+}
 

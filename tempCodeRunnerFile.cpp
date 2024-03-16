@@ -1,2 +1,1 @@
-{return a>0;}(4);
-  cout<<(7);
+// Check height balance

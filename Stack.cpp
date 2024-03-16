@@ -1,4 +1,4 @@
-/*
+
 #include <iostream>
 using namespace std;
 #define n 50
@@ -55,8 +55,7 @@ int main()
    st.pop();
   }
 }
-*/
-
+/*
 #include <iostream>
 using namespace std;
 #include <stack>
@@ -85,3 +84,4 @@ int main()
   string wrd = "blue is sky";
   rev (s);
 }
+*/
